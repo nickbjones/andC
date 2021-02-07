@@ -109,3 +109,15 @@ a {
   0%  {opacity:0}
   100%{opacity:1}
 }
+
+.get-a-better-browser {
+  position: absolute;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: pink;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  z-index: 999;
+}

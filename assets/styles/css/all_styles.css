@@ -119,6 +119,17 @@ a:link, a:visited, a:hover, a:active {
   100% {
     opacity: 1; } }
 
+.get-a-better-browser {
+  position: absolute;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: pink;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  z-index: 999; }
+
 .arrow-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;

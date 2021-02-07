@@ -1,4 +1,12 @@
 <?php include('../../settings.php'); ?>
+<?php
+  $ua = htmlentities($_SERVER['HTTP_USER_AGENT'], ENT_QUOTES, 'UTF-8');
+  if (preg_match('~MSIE|Internet Explorer~i', $ua) || (strpos($ua, 'Trident/7.0') !== false && strpos($ua, 'rv:11.0') !== false)) {
+    $showGetBetterBrowserMessage = true;
+  } else {
+    $showGetBetterBrowserMessage = false;
+  }
+?>
 <!doctype html>
 <html lang="jp">
 <head>
@@ -25,3 +33,4 @@
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS2LD28" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  <?= $showGetBetterBrowserMessage ? '<div class="get-a-better-browser">For the best experience, please load this page in a modern browser.</div>' : ''; ?>
