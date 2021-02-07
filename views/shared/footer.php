@@ -21,13 +21,38 @@
 
   <script type="text/javascript">
     $(document).ready(function() {
-      // scroll to top
       function scrollToTop() {
         $('html, body').animate({
           scrollTop: $('#scroll-to-top-anchor').offset().top
         }, 500);
       }
-  
+
+      function checkOffset() {
+        if ($('#scroll-to-top-button').offset().top + $('#scroll-to-top-button').height() >= $('#footer').offset().top) {
+          $('#scroll-to-top-button').css('position', 'absolute');
+          $('#scroll-to-top-button').css('top', `${0 - $('#scroll-to-top-button').height()}px`);
+        }
+        if ($(document).scrollTop() + window.innerHeight < $('#footer').offset().top) {
+          $('#scroll-to-top-button').css('position', 'fixed');
+          $('#scroll-to-top-button').css('top', 'auto');
+        }
+      }
+
+      function showImages() {
+        $('.image').each(function() {
+          if ($(window).scrollTop() + $(window).height() - 50 > $(this).offset().top) {
+            $(this).addClass('fadeIn');
+          }
+        })
+      }
+
+      showImages();
+
+      $(document).scroll(function() {
+        checkOffset();
+        showImages();
+      });
+
       $('#scroll-to-top-button').on('click', scrollToTop);
     });
   </script>

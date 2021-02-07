@@ -230,16 +230,16 @@ $features = [
       </h2>
       <div class="fashion-block">
         <div class="fashion-block__img-container">
-          <img class="fashion-block__img" src=<?= $imgPath . "/product/oshare1.png" ?>>
+          <img class="fashion-block__img image" src=<?= $imgPath . "/product/oshare1.png" ?>>
         </div>
         <div class="fashion-block__img-container">
-          <img class="fashion-block__img" src=<?= $imgPath . "/product/oshare2.png" ?>>
+          <img class="fashion-block__img image" src=<?= $imgPath . "/product/oshare2.png" ?>>
         </div>
         <div class="fashion-block__img-container">
-          <img class="fashion-block__img" src=<?= $imgPath . "/product/oshare3.png" ?>>
+          <img class="fashion-block__img image" src=<?= $imgPath . "/product/oshare3.png" ?>>
         </div>
         <div class="fashion-block__img-container">
-          <img class="fashion-block__img" src=<?= $imgPath . "/product/oshare4.png" ?>>
+          <img class="fashion-block__img image" src=<?= $imgPath . "/product/oshare4.png" ?>>
         </div>
       </div>
     </div>
@@ -252,7 +252,7 @@ $features = [
           <div class="feature__images">
             <?php foreach ($feature["image"] as $image) : ?>
               <div class="feature__image-block">
-                <img class="feature__image" src=<?= $imgPath . $image["src"] ?>>
+                <img class="feature__image image" src=<?= $imgPath . $image["src"] ?>>
                 <?php if ($image["caption"]) : ?>
                   <p class="feature__description"><?= $image["caption"] ?></p>
                 <?php endif ?>

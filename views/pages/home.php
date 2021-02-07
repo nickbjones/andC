@@ -185,7 +185,7 @@ $news_list = [
             <h3 class="point__title">厚い塗装膜が特徴の『耐候密着コーティング』を得意としています。</h3>
             <p>私たちは流動浸漬塗装技法を用いて、耐候密着コーティングを行っています。<br>この塗装方法は、昭和29年から半世紀以上の実績があり、環境負荷が少ない、サビに強く、滑らかで美しい塗膜が形成されます。</p>
           </div>
-          <img class="point__image" src=<?= $imgPath . "/home/technology1.png" ?>>
+          <img class="point__image image" src=<?= $imgPath . "/home/technology1.png" ?>>
           <div class="point__square"></div>
         </div>
         <div class="point point2">
@@ -194,7 +194,7 @@ $news_list = [
             <h3 class="point__title">国内にある自社工場で製造しています。</h3>
             <p>岩谷マテリアル株式会社のコーティング部は、国内３拠点、海外２拠点の製造部門を有し、＆C（アンド・シー）の商品群は国内工場にて製造しております。</p>
           </div>
-          <img class="point__image" src=<?= $imgPath . "/home/technology1.png" ?>>
+          <img class="point__image image" src=<?= $imgPath . "/home/technology1.png" ?>>
           <div class="point__square"></div>
         </div>
         <div class="point point3">
@@ -203,7 +203,7 @@ $news_list = [
             <h3 class="point__title">皆さんの身近にあるものにもつかわれている技術です。</h3>
             <p>私たちの製品は、高速道路のフェンスをはじめ、エアコンの室外機部品や、コンビニの冷蔵ショーケースなどに使われています。</p>
           </div>
-          <img class="point__image" src=<?= $imgPath . "/home/technology1.png" ?>>
+          <img class="point__image image" src=<?= $imgPath . "/home/technology1.png" ?>>
           <div class="point__square point__square-1"></div>
           <div class="point__square point__square-2"></div>
           <div class="point__square point__square-3"></div>

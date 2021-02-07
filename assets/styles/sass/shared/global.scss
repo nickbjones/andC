@@ -99,9 +99,19 @@ a {
   @include font_NotoSerif;
 }
 
+.image {
+  visibility: hidden;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE fix */
+  .image {
+    visibility: visible;
+  }
+}
+
 .fadeIn {
-  -webkit-animation: fadeIn 0.8s;
-  animation: fadeIn 0.8s;
+  animation: fadeIn 1s;
   visibility: visible !important;
 }
 

@@ -102,9 +102,17 @@ a:link, a:visited, a:hover, a:active {
   background-color: #e8f1f7;
   font-family: "NotoSerif", "Times New Roman", serif; }
 
+.image {
+  visibility: hidden; }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE fix */
+  .image {
+    visibility: visible; } }
+
 .fadeIn {
-  -webkit-animation: fadeIn 0.8s;
-  animation: fadeIn 0.8s;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
   visibility: visible !important; }
 
 @-webkit-keyframes fadeIn {
@@ -642,6 +650,10 @@ a:link, a:visited, a:hover, a:active {
   -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer; }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .scroll-to-top-button {
+      /* IE fix */
+      display: none; } }
   @media (max-width: 767px) {
     .scroll-to-top-button {
       width: 50px;
