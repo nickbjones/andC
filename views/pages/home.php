@@ -57,7 +57,7 @@
           <p class="text">サビ・腐食に強い耐候性密着コーティングを採用しているため、長期間安心してご利用いただけます。</p>
           <p class="text">趣味でガーデニングをされる方や、オーナメントやイルミネーションで飾り付けをされる方におススメのシンプルで飽きのこないデザインです。</p>
           <div class="button-container">
-            <a class="arrow-button" href="">エアコン室外機カバー<br>商品詳細はこちら</a>
+            <a class="arrow-button" href="/products/exterior-unit">エアコン室外機カバー<br>商品詳細はこちら</a>
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
                   <div class="description"><?= $article["Description"] ?></div>
                 </div>
                 <div class="lineup__button button-container">
-                  <a class="arrow-button" href="">エアコン室外機カバー<br>商品詳細はこちら</a>
+                  <a class="arrow-button" href="/products/exterior-unit">エアコン室外機カバー<br>商品詳細はこちら</a>
                 </div>
               </div>
             </div>
