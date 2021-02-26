@@ -1,11 +1,13 @@
 <?php
   // required page data
   $pageName = "product";
+
   $metaData = [
     "title" => "シンプルで長く使える室外機カバー（白・茶）｜業務用・一般用｜＆C－ブランドサイト",
     "description" => "サビ・劣化に強く、丈夫なエアコン室外機カバーです。積雪地域や日除け、省エネ効果に最適です。素材は、スチール製で、色は白（ホワイト）とブラウンの2種類ご用意。サイズは、標準サイズと大型室外機用をご用意しています。",
     "keywords" => "",
   ];
+
   $breadcrumb = [
     // [
     //   "link" => "/products",
@@ -27,7 +29,7 @@
     <div class="side-nav__inner">
       <div class="side-nav__inner-top">
         <p class="side-nav__title font-roboto">PRODUCTS</p>
-        <?php foreach ($asideProducts as $product) : ?>
+        <?php foreach ($products as $product) : ?>
           <p class="side-nav__item"><a href="<?= $product["link"] ?>"><?= $product["text"] ?></a></p>
         <?php endforeach ?>
       </div>

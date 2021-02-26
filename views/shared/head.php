@@ -1,4 +1,5 @@
 <?php include('../../settings.php'); ?>
+<?php include('../../content/global.php'); ?>
 <!doctype html>
 <html lang="jp">
 <head>
@@ -16,7 +17,7 @@
   <!-- javascript -->
   <script type="text/javascript" src="<?= $ASSETSPATH ?>/js/jquery-3.5.1.min.js"></script>
 
-  <!-- favicon -->
+  <!-- favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="<?= $IMAGESPATH ?>/shared/favicon-57.png">
   <link rel="apple-touch-icon" sizes="114x114" href="<?= $IMAGESPATH ?>/shared/favicon-114.png">
   <link rel="apple-touch-icon" sizes="72x72" href="<?= $IMAGESPATH ?>/shared/favicon-72.png">
