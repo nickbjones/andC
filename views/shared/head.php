@@ -17,21 +17,13 @@
   <script type="text/javascript" src="<?= $ASSETSPATH ?>/js/jquery-3.5.1.min.js"></script>
 
   <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="<?= $IMAGESPATH ?>/shared/favicon-57.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="<?= $IMAGESPATH ?>/shared/favicon-114.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="<?= $IMAGESPATH ?>/shared/favicon-72.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="<?= $IMAGESPATH ?>/shared/favicon-144.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="<?= $IMAGESPATH ?>/shared/favicon-60.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="<?= $IMAGESPATH ?>/shared/favicon-120.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="<?= $IMAGESPATH ?>/shared/favicon-76.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="<?= $IMAGESPATH ?>/shared/favicon-152.png">
-  <link rel="icon" type="image/png" sizes="196x196" href="<?= $IMAGESPATH ?>/shared/favicon-196.png">
-  <link rel="icon" type="image/png" sizes="160x160" href="<?= $IMAGESPATH ?>/shared/favicon-160.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="<?= $IMAGESPATH ?>/shared/favicon-96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="<?= $IMAGESPATH ?>/shared/favicon-16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="<?= $IMAGESPATH ?>/shared/favicon-32.png">
-  <meta name="msapplication-TileColor" content="#8db1ce">
-  <meta name="msapplication-TileImage" content="<?= $IMAGESPATH ?>/shared/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?= $ASSETSPATH ?>/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?= $ASSETSPATH ?>/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?= $ASSETSPATH ?>/favicon/favicon-16x16.png">
+  <link rel="manifest" href="<?= $ASSETSPATH ?>/favicon/site.webmanifest">
+  <link rel="mask-icon" href="<?= $ASSETSPATH ?>/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
