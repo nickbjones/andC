@@ -29,7 +29,7 @@
     <div class="side-nav__inner">
       <div class="side-nav__inner-top">
         <p class="side-nav__title font-roboto">PRODUCTS</p>
-        <?php foreach ($products as $product) : ?>
+        <?php foreach ($PRODUCTS as $product) : ?>
           <p class="side-nav__item"><a href="<?= $product["link"] ?>"><?= $product["text"] ?></a></p>
         <?php endforeach ?>
       </div>
