@@ -14,21 +14,22 @@
       <?php } ?>
       <div class="nav-menu" id="nav-menu">
         <div class="nav-item">
-          <a class="nav-item__link" href="/">TOP</a>
+          <a class="nav-item__item nav-item__link" href="/">TOP</a>
         </div>
         <div class="nav-item">
-          <a class="nav-item__link" href="/#lineup">PRODUCTS</a>
-          <span class="nav-item__submenu">
+          <span class="nav-item__item nav-item__more-items hide-sp">PRODUCTS</span>
+          <span class="nav-item__item nav-item__more-items hide-pc" id="nav-menu-products">PRODUCTS</span>
+          <div class="nav-item__submenu" id="nav-menu-products-list">
             <?php foreach ($PRODUCTS as $product): ?>
               <a class="nav-item__submenu-link" href="<?= $product['url'] ?>"><?= $product['text'] ?></a>
             <?php endforeach; ?>
-          </span>
+          </div>
         </div>
         <div class="nav-item">
-          <a class="nav-item__link" href="https://www.imcjpn.co.jp/about/profile.html" target="_blank">私たちについて<img class="external-link" src="<?= $IMAGESPATH ?>/shared/new-window.png"></a>
+          <a class="nav-item__item nav-item__link" href="https://www.imcjpn.co.jp/about/profile.html" target="_blank">私たちについて<img class="external-link" src="<?= $IMAGESPATH ?>/shared/new-window.png"></a>
         </div>
         <div class="nav-item">
-          <a class="nav-item__link" href="/inquiry">商品注文・お問い合わせ</a>
+          <a class="nav-item__item nav-item__link" href="/inquiry">商品注文・お問い合わせ</a>
         </div>
       </div>
       <div class="overlay" id="overlay"></div>
@@ -43,24 +44,35 @@
   <script type="text/javascript">
     $(document).ready(function() {
       // open/close mobile navigation
-      const $navMenu = $('#nav-menu');
       const $navHam = $('#nav-ham');
       const $overlay = $('#overlay');
+      const $navMenu = $('#nav-menu');
       const $navLinks = $('.nav-item__link');
-  
+      const $productsMenu = $('#nav-menu-products');
+      const $productsMenuList = $('#nav-menu-products-list');
+
       function toggleMenu() {
-        if ($navMenu.hasClass('open')) {
-          $navMenu.removeClass('open');
-          $overlay.removeClass('open');
+        if ($navMenu.hasClass('is-open')) {
+          $overlay.removeClass('is-open');
+          $navMenu.removeClass('is-open').slideUp(100, 'linear');
         } else {
-          $navMenu.addClass('open');
-          $overlay.addClass('open');
+          $overlay.addClass('is-open');
+          $navMenu.addClass('is-open').slideDown(100, 'linear');
         }
       }
-  
+
+      function toggleSubMenu() {
+        if ($productsMenuList.hasClass('is-open')) {
+          $productsMenuList.removeClass('is-open').slideUp(100, 'linear');
+        } else {
+          $productsMenuList.addClass('is-open').slideDown(100, 'linear');
+        }
+      }
+
       $navHam.on('click', toggleMenu);
       $overlay.on('click', toggleMenu);
-      $navLinks.on('click', toggleMenu);
+      $productsMenu.on('click', toggleSubMenu);
+      $navLinks.on('click', toggleMenu); // close the nav menu
     });
   </script>
 </div>
