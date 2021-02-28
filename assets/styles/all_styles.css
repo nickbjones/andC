@@ -699,10 +699,12 @@ a:link, a:visited, a:hover, a:active {
       background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(white));
       background: linear-gradient(rgba(255, 255, 255, 0.7) 0%, white); } }
   .ns-home .ns-nav .nav-item__submenu {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.9)));
-    background: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9));
     -webkit-box-shadow: none;
     box-shadow: none; }
+    @media (min-width: 768px) {
+      .ns-home .ns-nav .nav-item__submenu {
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.9)));
+        background: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9)); } }
 
 .ns-home .slider-container {
   position: relative; }
