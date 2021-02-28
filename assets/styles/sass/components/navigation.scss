@@ -112,6 +112,7 @@
     line-height: 1.3;
     @include font_NotoSans;
     color: $linkColor;
+    cursor: pointer;
     @include pc-only {
       &:hover {
         & ~ .nav-item__submenu {
