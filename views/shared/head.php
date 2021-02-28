@@ -1,4 +1,5 @@
 <?php include('../../settings.php'); ?>
+<?php include('../../content/global.php'); ?>
 <!doctype html>
 <html lang="jp">
 <head>

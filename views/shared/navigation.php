@@ -1,16 +1,7 @@
-<?php
-  $navProducts = [
-    [
-      "text" => "エアコン室外機カバー",
-      "url" => "/products/exterior-unit",
-    ],
-  ];
-?>
-
 <div class="ns-nav">
   <div class="layout">
     <div class="nav-wrapper">
-      <?php if ($pageName == 'home'){ ?>
+      <?php if ($pageName == 'home') { ?>
         <h1 class="nav-h1">
           <a href="/"><img class="nav-h1__logo" src="<?= $IMAGESPATH ?>/shared/logo_lg.png" alt="andC logo"></a>
           <span class="nav-h1__text">庭と家との調和</span>
@@ -28,7 +19,7 @@
         <div class="nav-item">
           <a class="nav-item__link" href="/#lineup">PRODUCTS</a>
           <span class="nav-item__submenu">
-            <?php foreach ($navProducts as $product): ?>
+            <?php foreach ($PRODUCTS as $product): ?>
               <a class="nav-item__submenu-link" href="<?= $product['url'] ?>"><?= $product['text'] ?></a>
             <?php endforeach; ?>
           </span>
