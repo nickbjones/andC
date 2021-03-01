@@ -40,18 +40,33 @@
 
   .lists {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    margin: 0 auto;
+    @include sp-only {
+      justify-content: center;
+      max-width: 500px;
+    }
+    @include pc-only {
+      justify-content: flex-start;
+      max-width: 800px;
+    }
 
     .list {
       flex: 0 1 auto;
+      @include sp-only {
+        margin-bottom: 3rem;
+      }
+      @include pc-only {
+        margin: 0 3rem 3rem;
+      }
     }
 
     .list__title {
-      padding: .5rem 1rem;
-      margin-bottom: 1rem;
-      border-left: 3px solid #d3dbd7;
       font-size: 1.5rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      padding: 0 1rem;
+      border-left: 3px solid #d3dbd7;
       @include font_NotoSerif;
     }
 

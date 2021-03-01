@@ -552,19 +552,37 @@ a:link, a:visited, a:hover, a:active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin: 0 auto; }
+    @media (max-width: 829px) {
+      .ns-shop-section .lists {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        max-width: 500px; } }
+    @media (min-width: 830px) {
+      .ns-shop-section .lists {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        max-width: 800px; } }
     .ns-shop-section .lists .list {
       -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
       flex: 0 1 auto; }
+      @media (max-width: 829px) {
+        .ns-shop-section .lists .list {
+          margin-bottom: 3rem; } }
+      @media (min-width: 830px) {
+        .ns-shop-section .lists .list {
+          margin: 0 3rem 3rem; } }
     .ns-shop-section .lists .list__title {
-      padding: .5rem 1rem;
-      margin-bottom: 1rem;
-      border-left: 3px solid #d3dbd7;
       font-size: 1.5rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      padding: 0 1rem;
+      border-left: 3px solid #d3dbd7;
       font-family: "NotoSerif", "Times New Roman", serif; }
     .ns-shop-section .lists .list__link {
       display: block;
