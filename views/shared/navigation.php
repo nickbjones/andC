@@ -61,17 +61,17 @@
         }
       }
 
-      function toggleSubMenu() {
-        if ($productsMenuList.hasClass('is-open')) {
-          $productsMenuList.removeClass('is-open').slideUp(100, 'linear');
-        } else {
-          $productsMenuList.addClass('is-open').slideDown(100, 'linear');
-        }
-      }
+      // function toggleSubMenu() {
+      //   if ($productsMenuList.hasClass('is-open')) {
+      //     $productsMenuList.removeClass('is-open').slideUp(100, 'linear');
+      //   } else {
+      //     $productsMenuList.addClass('is-open').slideDown(100, 'linear');
+      //   }
+      // }
 
       $navHam.on('click', toggleMenu);
       $overlay.on('click', toggleMenu);
-      $productsMenu.on('click', toggleSubMenu);
+      // $productsMenu.on('click', toggleSubMenu);
       $navLinks.on('click', toggleMenu); // close the nav menu
     });
   </script>
