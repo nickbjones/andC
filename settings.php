@@ -1,7 +1,7 @@
 <?php
   /* environments */
   $ENV = [
-    "test" => "/test/2021-02-28",
+    "test" => "/test/2021-02-18",
     "prod" => "",
   ];
 
