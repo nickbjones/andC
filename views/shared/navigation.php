@@ -18,7 +18,7 @@
         </div>
         <div class="nav-item">
           <a class="nav-item__item nav-item__more-items hide-sp" href="#lineup">PRODUCTS</a>
-          <span class="nav-item__item nav-item__more-items hide-pc" href="#lineup" id="nav-menu-products">PRODUCTS</span>
+          <a class="nav-item__item nav-item__more-items hide-pc" href="#lineup" id="nav-menu-products">PRODUCTS</a>
           <div class="nav-item__submenu" id="nav-menu-products-list">
             <?php foreach ($PRODUCTS as $product): ?>
               <a class="nav-item__submenu-link" href="<?= $product['url'] ?>"><?= $product['text'] ?></a>
